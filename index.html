@@ -244,10 +244,12 @@ h+='<div style="padding:6px 20px;display:flex;justify-content:space-between;alig
 // Paused banner
 if(S.paused){h+='<div style="margin:0 20px 14px;padding:12px 16px;border-radius:14px;background:var(--rp);border:1.5px solid #E8D5CC;display:flex;justify-content:space-between;align-items:center;gap:10px"><span style="font-size:13px;font-weight:600;color:var(--rt)">Deliveries paused'+(S.resumeDate?' until '+fmtDate(S.resumeDate):'')+'</span><span onclick="resumeSubscription()" style="font-size:13px;font-weight:600;color:var(--rose);cursor:pointer;flex-shrink:0">Resume</span></div>';}
 // Hero
-h+='<div style="position:relative;height:310px;overflow:hidden">'+pi(IMGS.hero,'100%','310px')+'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,23,20,0) 42%,rgba(26,23,20,.62) 100%)"></div>';
+h+='<div style="position:relative;height:310px;overflow:hidden">'+pi(IMGS.hero,'100%','310px')+'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,0) 20%,rgba(20,16,12,.78) 100%)"></div>';
 
-h+='<div style="position:absolute;bottom:0;left:0;right:0;padding:0 20px 24px"><div style="font-size:30px;font-weight:500;color:#fff;line-height:1.06;text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 20px rgba(0,0,0,.55)">Artisan quality, baked fresh, & brought to you.</div>';
+h+='<div style="position:absolute;bottom:0;left:0;right:0;padding:0 20px 24px"><div style="font-size:30px;font-weight:600;color:#fff;line-height:1.06;text-shadow:0 1px 2px rgba(0,0,0,.8),0 2px 6px rgba(0,0,0,.6),0 4px 24px rgba(0,0,0,.5)">Artisan quality, baked fresh, & brought to you.</div>';
 h+='<div style="margin-top:16px"><span class="btn bp bs" onclick="go(\'builder\',{box:\'family\'})">Build your first box</span></div></div></div>';
+// Why Patisse
+h+='<div style="padding:18px 20px;background:var(--rp)"><div style="font-size:14px;line-height:1.55;color:var(--rt);font-weight:400">The kind of bread and baked goods you won\'t find at a grocery store &mdash; made by hand, with real ingredients, and brought straight to you.</div></div>';
 // Returning customer
 h+='<div style="padding:16px 18px 0"><div onclick="go(\'welcome\')" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:14px;border:1.5px solid var(--bdr);cursor:pointer;background:var(--rp)"><span style="font-size:14px;font-weight:600;color:var(--rt)">Already part of the family?</span><span style="font-size:13px;font-weight:600;color:var(--rose)">Sign in →</span></div></div>';
 // Value props
